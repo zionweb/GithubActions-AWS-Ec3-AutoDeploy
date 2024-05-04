@@ -56,7 +56,7 @@ jobs:
         run: npm run linters-ci
       - name: Asignar derechos
         run: chmod +x /.github/scripts/build.sh
-
+        shell: bash
       - name: Build NextJS static site
         run: ./.github/scripts/build.sh
         shell: bash
